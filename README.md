@@ -77,7 +77,7 @@ You can also pass custom request headers.
 ```ruby
 Apicalypse.new("https://any-apicalypse-api.com/foobar", {
   headers: {
-    'user-key' => 'your-api-key',
+    'client-id' => 'your-client-id',
     'Accept'   => 'application/json'
   }
 })
@@ -86,10 +86,11 @@ Apicalypse.new("https://any-apicalypse-api.com/foobar", {
 ```
 
 ### Real world example
+To get access to the IGDB API, please (see their documenation)[https://api-docs.igdb.com/#the-basics]
 
 ```ruby
-api_endpoint = 'https://api-v3.igdb.com/games'
-request_headers = { headers: { 'user-key' => 'your-igdb-api-key' } }
+api_endpoint = 'https://api.igdb.com/v4/games'
+request_headers = { headers: { 'client-id' => 'your-twitch-client-id', 'authorization' => 'Bearer your-app-access-token', 'x-user-agent' => 'ruby-apicalypse' } }
 
 api = Apicalypse.new(api_endpoint, request_headers)
 
