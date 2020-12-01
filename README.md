@@ -2,6 +2,8 @@
 
 [What is Apicalypse?](https://apicalypse.io/)
 
+❗ This repository is not actively maintained, development continues at [StefanGreffenius/ruby-apicalypse](https://github.com/StefanGreffenius/ruby-apicalypse). ❗
+
 ## Installation
 
 Add this line to your application's Gemfile:
